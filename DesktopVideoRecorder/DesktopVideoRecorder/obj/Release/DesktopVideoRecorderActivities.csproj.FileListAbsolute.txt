@@ -1,0 +1,8 @@
+C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorderActivities.csproj.CoreCompileInputs.cache
+C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorderActivities.csproj.CoreCompileInputs.cache
+C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\DesktopVideoRecorder.dll
+C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorder.dll
+C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorderActivities.csprojResolveAssemblyReference.cache
+C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\DesktopVideoRecorder.dll
+C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorder.dll
+C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorderActivities.csprojResolveAssemblyReference.cache
