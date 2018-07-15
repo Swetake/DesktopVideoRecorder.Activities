@@ -1,4 +1,0 @@
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\DesktopVideoRecorder.dll
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorder.Activities.csprojResolveAssemblyReference.cache
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorder.Activities.csproj.CoreCompileInputs.cache
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\DesktopVideoRecorder.dll

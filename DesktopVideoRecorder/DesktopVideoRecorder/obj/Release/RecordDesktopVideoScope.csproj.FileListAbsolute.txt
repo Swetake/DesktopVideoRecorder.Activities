@@ -1,3 +1,0 @@
-C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\RecordDesktopVideoScope.csproj.CoreCompileInputs.cache
-C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\RecordDesktopVideoScopeActivity.dll
-C:\Users\C041472\Documents\Visual Studio 2017\Projects\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\RecordDesktopVideoScopeActivity.dll

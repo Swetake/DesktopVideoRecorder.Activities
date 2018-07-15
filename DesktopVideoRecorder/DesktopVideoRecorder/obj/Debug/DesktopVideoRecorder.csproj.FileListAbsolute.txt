@@ -1,5 +1,0 @@
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\bin\Debug\DesktopVideoRecorder.dll
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\bin\Debug\DesktopVideoRecorder.pdb
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Debug\DesktopVideoRecorder.csproj.CoreCompileInputs.cache
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Debug\DesktopVideoRecorder.dll
-C:\Users\swe\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\obj\Debug\DesktopVideoRecorder.pdb
