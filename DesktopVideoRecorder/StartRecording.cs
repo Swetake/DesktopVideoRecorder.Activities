@@ -19,7 +19,8 @@ namespace DesktopVideoRecorder
         public const int MAX_FPS = 60;
 
         const string MSG_FFMPEG_NOT_FOUND_EXCEPTION = "Not found " + FFMPEG_EXE_NAME;
-
+        const string MSG_FFMPEG_FAILED_TO_START = "Failed to start "+FFMPEG_EXE_NAME +". Please check arguments.";
+        const int WAIT_TIME_MSEC_AFTER_RUN_FFMPEG_EXE = 300;
 
         [Category("Common")]
         [Description("[Optional]Flag if this avtivity is enable. Default is false.")]
@@ -91,6 +92,8 @@ namespace DesktopVideoRecorder
                 arguments.FrameRate = FrameRate.Get(context);
 
                 ps = StartRecording.Start(arguments);
+
+
             }
         }
 
@@ -161,6 +164,15 @@ namespace DesktopVideoRecorder
 
             #endregion
 
+
+
+            //Delete Video file if already exist.
+            if (System.IO.File.Exists(ffmpegArgument.OutputFileName))
+            {
+                System.IO.File.Delete(ffmpegArgument.OutputFileName);
+            }
+
+            //Append "ffmpeg.exe" if the argument does not end with it.
             string strFFmpegFilePath = ffmpegArgument.FFmpegFilePath;
             if (!strFFmpegFilePath.EndsWith(FFMPEG_EXE_NAME))
             {
@@ -168,6 +180,7 @@ namespace DesktopVideoRecorder
             }
 
             #region Run FFmpeg
+            //Check ffmpeg.exe
             if (System.IO.File.Exists(strFFmpegFilePath))
             {
                 ProcessStartInfo psi = new ProcessStartInfo();
@@ -180,6 +193,13 @@ namespace DesktopVideoRecorder
 
                 ps = Process.Start(psi);
 
+                System.Threading.Thread.Sleep(WAIT_TIME_MSEC_AFTER_RUN_FFMPEG_EXE);
+
+                //Check if ffmpeg is normaly running.
+                if (ps.HasExited)
+                {
+                    throw (new Exception(MSG_FFMPEG_FAILED_TO_START));
+                }
             }
             else
             {
