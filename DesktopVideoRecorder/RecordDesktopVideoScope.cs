@@ -45,18 +45,18 @@ namespace DesktopVideoRecorder
 
 
 
-        [Category("Video")]
+        [Category("FFmpeg")]
         [Description("[Optional]Framerate (FPS:Frame Per Second) Default is 30fps.")]
         [DefaultValue(StartRecording.DEFAULT_FPS)]
         public InArgument<int> FrameRate { get; set; }
 
-        [Category("Video")]
+        [Category("FFmpeg")]
         [Description("[Optional]Max duration (sec). Default is 600sec = 10min")]
         [DefaultValue(StartRecording.DEFAULT_MAX_DURATION)]
         public InArgument<int> MaxDuration { get; set; }
 
 
-        [Category("Video")]
+        [Category("FFmpeg")]
         [Description("[Optional]Max file size (Mbyte). Deafult is 2048Mbyte=2GByte")]
         [DefaultValue(StartRecording.DEFAULT_MAX_FILE_SIZE_MB)]
         public InArgument<int> MaxFileSize { get; set; }
