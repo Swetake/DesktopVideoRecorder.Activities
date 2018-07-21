@@ -18,14 +18,20 @@ namespace DesktopVideoRecorder
         public const int DEFAULT_FPS = 30;  //30fps
         public const int MAX_FPS = 60;
 
+        public const int DEFAULT_DELAY_AFTER = 500;
+
         const string MSG_FFMPEG_NOT_FOUND_EXCEPTION = "Not found " + FFMPEG_EXE_NAME;
         const string MSG_FFMPEG_FAILED_TO_START = "Failed to start "+FFMPEG_EXE_NAME +". Please check arguments.";
-        const int WAIT_TIME_MSEC_AFTER_RUN_FFMPEG_EXE = 300;
 
         [Category("Common")]
         [Description("[Optional]Flag if this avtivity is enable. Default is false.")]
         [DefaultValue(false)]
         public InArgument<bool> DisableActivity { get; set; }
+
+        [Category("Common")]
+        [Description("[Optional]Delay time after starting ffmpeg. And check if ffmpeg is running then. Default is 500msec")]
+        [DefaultValue(DEFAULT_DELAY_AFTER)]
+        public InArgument<int> DelayAfter { get; set; }
 
         [Category("FFmpeg")]
         [Description("Full path to ffmpeg.exe. This string should end with ffmpeg.exe")]
@@ -91,14 +97,12 @@ namespace DesktopVideoRecorder
                 arguments.MaxFileSize = MaxFileSize.Get(context);
                 arguments.FrameRate = FrameRate.Get(context);
 
-                ps = StartRecording.Start(arguments);
-
-
+                ps = StartRecording.Start(arguments,DelayAfter.Get(context));
             }
         }
 
 
-        public static Process Start(FFmpegArgument ffmpegArgument)
+        public static Process Start(FFmpegArgument ffmpegArgument, int intDelayAfter)
         {
             Process ps = null;
 
@@ -193,7 +197,7 @@ namespace DesktopVideoRecorder
 
                 ps = Process.Start(psi);
 
-                System.Threading.Thread.Sleep(WAIT_TIME_MSEC_AFTER_RUN_FFMPEG_EXE);
+                System.Threading.Thread.Sleep(intDelayAfter);
 
                 //Check if ffmpeg is normaly running.
                 if (ps.HasExited)

@@ -21,6 +21,12 @@ namespace DesktopVideoRecorder
         [DefaultValue(false)]
         public InArgument<bool> IsActivityDisable { get; set; }
 
+        [Category("Common")]
+        [Description("[Optional]Delay time after starting ffmpeg. Default is 500msec")]
+        [DefaultValue(StartRecording.DEFAULT_DELAY_AFTER)]
+        public InArgument<int> DelayAfter { get; set; }
+
+
         [Category("FFmpeg")]
         [Description("Full path to ffmpeg.exe. This string should end with ffmpeg.exe")]
         [RequiredArgument]
@@ -40,10 +46,6 @@ namespace DesktopVideoRecorder
         [Description("[Optional]PixelFormat. Default is yuv420p.")]
         [DefaultValue(StartRecording.DEFAULT_PIXEL_FORMAT)]
         public InArgument<string> PixelFormat { get; set; }
-
-
-
-
 
         [Category("FFmpeg")]
         [Description("[Optional]Framerate (FPS:Frame Per Second) Default is 30fps.")]
@@ -96,7 +98,7 @@ namespace DesktopVideoRecorder
                 arguments.FrameRate = FrameRate.Get(context);
 
 
-                ps = StartRecording.Start(arguments);
+                ps = StartRecording.Start(arguments, DelayAfter.Get(context));
             }
 
             if (Body != null)
