@@ -21,24 +21,22 @@ Usage
 
 Activity
 --------
-  
-  ### RecordDesktopVideoScope
-
- * Common
-   * DelayAfter
+* RecordDesktopVideoScope Avtivity
+  * Common
+    * DelayAfter
    
-   * DisableActivity
+    * DisableActivity
 
  
- * FFmpeg
-   * FFmpegFilePath
+  * FFmpeg
+    * FFmpegFilePath
    
-   * ExtraOptionString
+    * ExtraOptionString
  
-   * FrameRate
+    * FrameRate
  
- * Output
-   * OutputFileName
+  * Output
+    * OutputFileName
  
 
 
