@@ -1,5 +1,6 @@
 # DesktopVideoRecorder.Activities
-=================================
+==========
+
 DesktopVideoRecorder Activities Package
 
 Table of Contents
