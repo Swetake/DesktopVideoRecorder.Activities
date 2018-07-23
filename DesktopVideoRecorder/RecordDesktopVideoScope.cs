@@ -21,6 +21,12 @@ namespace DesktopVideoRecorder
         [DefaultValue(false)]
         public InArgument<bool> IsActivityDisable { get; set; }
 
+        [Category("Common")]
+        [Description("[Optional]Delay time after starting ffmpeg. Default is 500msec")]
+        [DefaultValue(StartRecording.DEFAULT_DELAY_AFTER)]
+        public InArgument<int> DelayAfter { get; set; }
+
+
         [Category("FFmpeg")]
         [Description("Full path to ffmpeg.exe. This string should end with ffmpeg.exe")]
         [RequiredArgument]
@@ -41,22 +47,18 @@ namespace DesktopVideoRecorder
         [DefaultValue(StartRecording.DEFAULT_PIXEL_FORMAT)]
         public InArgument<string> PixelFormat { get; set; }
 
-
-
-
-
-        [Category("Video")]
+        [Category("FFmpeg")]
         [Description("[Optional]Framerate (FPS:Frame Per Second) Default is 30fps.")]
         [DefaultValue(StartRecording.DEFAULT_FPS)]
         public InArgument<int> FrameRate { get; set; }
 
-        [Category("Video")]
+        [Category("FFmpeg")]
         [Description("[Optional]Max duration (sec). Default is 600sec = 10min")]
         [DefaultValue(StartRecording.DEFAULT_MAX_DURATION)]
         public InArgument<int> MaxDuration { get; set; }
 
 
-        [Category("Video")]
+        [Category("FFmpeg")]
         [Description("[Optional]Max file size (Mbyte). Deafult is 2048Mbyte=2GByte")]
         [DefaultValue(StartRecording.DEFAULT_MAX_FILE_SIZE_MB)]
         public InArgument<int> MaxFileSize { get; set; }
@@ -96,7 +98,7 @@ namespace DesktopVideoRecorder
                 arguments.FrameRate = FrameRate.Get(context);
 
 
-                ps = StartRecording.Start(arguments);
+                ps = StartRecording.Start(arguments, DelayAfter.Get(context));
             }
 
             if (Body != null)

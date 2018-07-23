@@ -1,0 +1,1 @@
+# DesktopVideoRecorder.Activities
