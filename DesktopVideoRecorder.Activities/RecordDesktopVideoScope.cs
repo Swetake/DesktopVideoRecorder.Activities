@@ -17,7 +17,7 @@ namespace DesktopVideoRecorder
         public ActivityAction Body { get; set; }
 
         [Category("Common")]
-        [Description("[Optional]Flag if this avtivity is enable. Default is False.")]
+        [Description("[Optional]Flag if this avtivity is disable. Default is False.")]
         [DefaultValue(false)]
         public InArgument<bool> IsActivityDisable { get; set; }
 

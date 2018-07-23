@@ -24,7 +24,7 @@ namespace DesktopVideoRecorder
         const string MSG_FFMPEG_FAILED_TO_START = "Failed to start "+FFMPEG_EXE_NAME +". Please check arguments.";
 
         [Category("Common")]
-        [Description("[Optional]Flag if this avtivity is enable. Default is false.")]
+        [Description("[Optional]Flag if this avtivity is disable. Default is false.")]
         [DefaultValue(false)]
         public InArgument<bool> DisableActivity { get; set; }
 
