@@ -1,7 +1,7 @@
 DesktopVideoRecorder.Activities
 ==========
 
-DesktopVideoRecorder Activities Package
+DesktopVideoRecorder Activity Package
 
 Table of Contents
 -----------------
@@ -25,16 +25,20 @@ Activity
   ### RecordDesktopVideoScope
 
  * Common
- ** DisableActivity
+   * DelayAfter
+   
+   * DisableActivity
 
- ** DelayAfter
  
  * FFmpeg
- ** FFmpegFilePath
- ** ExtraOptionString
+   * FFmpegFilePath
+   
+   * ExtraOptionString
+ 
+   * FrameRate
  
  * Output
- ** OutputFileName
+   * OutputFileName
  
 
 
