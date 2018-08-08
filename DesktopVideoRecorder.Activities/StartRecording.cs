@@ -101,6 +101,8 @@ namespace DesktopVideoRecorder
 
                 ps = StartRecording.Start(arguments,DelayAfter.Get(context));
             }
+
+            FFmpegProcess.Set(context, ps);
         }
 
 
