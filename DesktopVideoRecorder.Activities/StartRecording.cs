@@ -33,6 +33,8 @@ namespace DesktopVideoRecorder
         [DefaultValue(DEFAULT_DELAY_AFTER)]
         public InArgument<int> DelayAfter { get; set; }
 
+
+
         [Category("FFmpeg")]
         [Description("Full path to ffmpeg.exe. This string should end with ffmpeg.exe")]
         [RequiredArgument]
