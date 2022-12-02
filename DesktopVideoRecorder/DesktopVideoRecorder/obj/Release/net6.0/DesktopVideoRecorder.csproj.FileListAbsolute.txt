@@ -1,0 +1,15 @@
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net6.0\DesktopVideoRecorder.deps.json
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net6.0\DesktopVideoRecorder.dll
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net6.0\DesktopVideoRecorder.pdb
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net6.0\DesktopVideoRecorder.xml
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.csproj.AssemblyReference.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.Properties.Resources.resources
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.csproj.GenerateResource.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.AssemblyInfoInputs.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.AssemblyInfo.cs
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.csproj.CoreCompileInputs.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.dll
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\refint\DesktopVideoRecorder.dll
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\DesktopVideoRecorder.pdb
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net6.0\ref\DesktopVideoRecorder.dll

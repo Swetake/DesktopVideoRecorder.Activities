@@ -1,0 +1,12 @@
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net461\DesktopVideoRecorder.dll
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net461\DesktopVideoRecorder.pdb
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\bin\Release\net461\DesktopVideoRecorder.xml
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.csproj.AssemblyReference.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.Properties.Resources.resources
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.csproj.GenerateResource.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.AssemblyInfoInputs.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.AssemblyInfo.cs
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.csproj.CoreCompileInputs.cache
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.dll
+C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder\obj\Release\net461\DesktopVideoRecorder.pdb

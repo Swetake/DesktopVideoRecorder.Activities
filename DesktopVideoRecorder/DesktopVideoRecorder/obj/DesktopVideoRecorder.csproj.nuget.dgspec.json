@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+        "projectName": "DesktopVideoRecorder",
+        "projectPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+        "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\.nuget\\NuGet.Config",
+          "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\developer\\.nuget\\packages": {},
+          "c:\\temp": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gallery.uipath.com/api/v3/index.json": {},
+          "https://nuget.org/api/v2/": {},
+          "https://www.myget.org/F/uipath/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
