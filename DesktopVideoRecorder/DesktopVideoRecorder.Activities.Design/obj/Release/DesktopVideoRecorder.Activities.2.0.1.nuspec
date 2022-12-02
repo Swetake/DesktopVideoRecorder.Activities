@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DesktopVideoRecorder.Activities</id>
+    <version>2.0.1</version>
+    <authors>Yoichi Suetake</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</iconUrl>
+    <description>Desktop Video Recoreder activites package. This package provides activities for desktop recording using ffmpeg.exe</description>
+    <copyright>© 1998-2022 OPTAGE Inc.</copyright>
+    <tags>UiPath Desktop Video Recording</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1" />
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1" />
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.Activities.dll" target="lib\net461\DesktopVideoRecorder.Activities.dll" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.dll" target="lib\net461\DesktopVideoRecorder.dll" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.Activities.xml" target="lib\net461\DesktopVideoRecorder.Activities.xml" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.xml" target="lib\net461\DesktopVideoRecorder.xml" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net461\DesktopVideoRecorder.Activities.Design.dll" target="lib\net461\DesktopVideoRecorder.Activities.Design.dll" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net461\DesktopVideoRecorder.Activities.Design.xml" target="lib\net461\DesktopVideoRecorder.Activities.Design.xml" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.Activities.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.dll" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.dll" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.Activities.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.xml" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.xml" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net6.0-windows\DesktopVideoRecorder.Activities.Design.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.Design.dll" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net6.0-windows\DesktopVideoRecorder.Activities.Design.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.Design.xml" />
+    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\packageIcon.png" target="packageIcon.png" />
+  </files>
+</package>

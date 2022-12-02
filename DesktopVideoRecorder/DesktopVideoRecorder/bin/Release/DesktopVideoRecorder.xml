@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DesktopVideoRecorder</name>
+    </assembly>
+    <members>
+        <member name="T:DesktopVideoRecorder.IObjectContainer">
+            <summary>
+            A simple container for objects meant to be shared accross the application space.
+            </summary>
+        </member>
+        <member name="M:DesktopVideoRecorder.IObjectContainer.Add``1(``0)">
+            <summary>
+            Stores a reference to an object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="objectToAdd"></param>
+        </member>
+        <member name="M:DesktopVideoRecorder.IObjectContainer.Get``1">
+            <summary>
+            Gets the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DesktopVideoRecorder.IObjectContainer.Where(System.Func{System.Object,System.Boolean})">
+             <summary>
+            
+             </summary>
+             <param name="filter"></param>
+             <returns></returns>
+        </member>
+        <member name="M:DesktopVideoRecorder.IObjectContainer.Remove``1">
+             <summary>
+            
+             </summary>
+             <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DesktopVideoRecorder.IObjectContainer.Contains``1">
+            <summary>
+            Determines whether this instance contains the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>
+            <c>true</c> if this instance contains object; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:DesktopVideoRecorder.IObjectContainer.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="T:DesktopVideoRecorder.ObjectContainer">
+            <summary>
+            A simple container for objects meant to be shared accross the application space.
+            </summary>
+        </member>
+        <member name="F:DesktopVideoRecorder.ObjectContainer._objectHolder">
+            <summary>
+            Gets the object holder.
+            </summary>
+            <value>
+            The object holder.
+            </value>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DesktopVideoRecorder.ObjectContainer" /> class.
+            </summary>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.Add``1(``0)">
+            <summary>
+            Stores a reference to a object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="object"></param>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.Get``1">
+            <summary>
+            Gets the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.Where(System.Func{System.Object,System.Boolean})">
+             <summary>
+            
+             </summary>
+             <param name="filter"></param>
+             <returns></returns>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.Remove``1">
+            <summary>
+            Remove a object from the container
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.Contains``1">
+            <summary>
+            Determines whether this instance contains the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>
+              <c>true</c> if this instance contains object; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:DesktopVideoRecorder.ObjectContainer.Clear">
+            <summary>
+            Clears this instance.
+            </summary>
+        </member>
+        <member name="T:DesktopVideoRecorder.FFmpegArgument">
+            <summary>
+            Container of ffmpeg arguments.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.FFmpegFilePath">
+            <summary>
+            Full path to ffmpeg.exe.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.OutputFileName">
+            <summary>
+            Full path to output file
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.VideoCodec">
+            <summary>
+            VideoCodec.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.PixelFormat">
+            <summary>
+            PixelFormat
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.ExtraOptionString">
+            <summary>
+            ExtraOptionString.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.MaxDuration">
+            <summary>
+            Max duration.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.MaxFileSize">
+            <summary>
+            Max filesize.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.FrameRate">
+            <summary>
+            Frame rate
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.FFmpegArgument.VideoSize">
+            <summary>
+            Video size.
+            </summary>
+        </member>
+        <member name="T:DesktopVideoRecorder.FFMpegControl">
+            <summary>
+            FFmpeg control class
+            </summary>
+        </member>
+        <member name="M:DesktopVideoRecorder.FFMpegControl.Start(DesktopVideoRecorder.FFmpegArgument,System.Int32)">
+            <summary>
+            Start ffmpeg process to record desktop
+            </summary>
+        </member>
+        <member name="M:DesktopVideoRecorder.FFMpegControl.Stop(System.Diagnostics.Process)">
+            <summary>
+            Stop recording and terminate ffmpeg process.
+            </summary>
+        </member>
+        <member name="T:DesktopVideoRecorder.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
