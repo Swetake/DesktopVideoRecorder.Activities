@@ -27,9 +27,7 @@ Usage
     * 2. Put **StopRecording** Activity at the point of finish recording.
     * Note: Basically you have to call StopRecording before workflow terminates .
             Otherwise, recording will be continued until MaxDuration or MaxFileSize.
-            
-    * You can use PauseEncoding and UnpauseEncoding but this activity provides not pausing recording but pausing encoding. The duration won't be shortened.     
-    
+               
 Activity
 --------
 * RecordDesktopVideoScope Avtivity
@@ -43,6 +41,10 @@ Activity
     * DisableActivity (Int32)
     
        [Optional] Flag if this avtivity is disable. Default is false.
+       
+    * DebugMode
+ 
+       [Optional] If set true, this activity works as debug mode. it output detailed information when exception occurs. Default is false.
  
  
   * FFmpeg
@@ -58,7 +60,7 @@ Activity
     
     * FrameRate (Int32)
     
-      [Optional] Framerate (FPS:Frame Per Second) Default is 30fps.
+      [Optional] Framerate (FPS:Frame Per Second) Default is 30fps. Maximum value is 240fps
     
     
     * MaxDuration (Int32)
@@ -80,6 +82,10 @@ Activity
     
       [Optional] VideoCodec. Default is libx264.
 
+    * VideoSize (String)
+    
+      [Optional] Video Size. If not set, desktop size is automatically applied. 
+
 
   * Output
     * FFmpegProcess (System.Diagnotics.Process)  (This property is only in Start Recording)
@@ -93,8 +99,6 @@ Activity
 
 
 * StopRecording Activity
-* PasuseEncoding Activity
-* UnpasuseEncoding Activity
   * FFmpeg
     * FFmpegProcess  (System.Diagnotics.Process) 
     
