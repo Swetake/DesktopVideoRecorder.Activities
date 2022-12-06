@@ -4,9 +4,89 @@
         <name>DesktopVideoRecorder.Activities</name>
     </assembly>
     <members>
+        <member name="T:DesktopVideoRecorder.Activities.RecordDesktopVideoScope">
+            <summary>
+            RecordDesktopVideoScope 
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.Body">
+            <summary>
+            Body.
+            </summary>
+        </member>
         <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.ContinueOnError">
             <summary>
             If set, continue executing the remaining activities even if the current activity has failed.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.DelayAfter">
+            <summary>
+            Delay after strating ffmepg process
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.DisableActivity">
+            <summary>
+            If set, this activity is disabled.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.ExtraOptionString">
+            <summary>
+            for additionl option 
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.FFmpegFilePath">
+            <summary>
+            Full path to ffmpeg.exe.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.FrameRate">
+            <summary>
+            Framerte (fps) 
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.MaxDuration">
+            <summary>
+            Max duration (sec) 
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.MaxFileSize">
+            <summary>
+            Max file size (MByte)
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.PixelFormat">
+            <summary>
+            Pixel format
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.VideoCodec">
+            <summary>
+            video codec
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.VideoSize">
+            <summary>
+            video size 
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.OutputFileName">
+            <summary>
+            output filename 
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.DebugMode">
+            <summary>
+            If set true, this activity run as debug mode.
+            </summary>
+        </member>
+        <member name="M:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.CacheMetadata(System.Activities.NativeActivityMetadata)">
+            <summary>
+            cache metadata 
+            </summary>
+        </member>
+        <member name="M:DesktopVideoRecorder.Activities.RecordDesktopVideoScope.ExecuteAsync(System.Activities.NativeActivityContext,System.Threading.CancellationToken)">
+            <summary>
+            Execute Async 
             </summary>
         </member>
         <member name="T:DesktopVideoRecorder.Activities.StartRecording">
@@ -77,6 +157,11 @@
         <member name="P:DesktopVideoRecorder.Activities.StartRecording.DisableActivity">
             <summary>
             If set true, this activity is disabled.
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.StartRecording.DebugMode">
+            <summary>
+            If set true, this activity run as debug mode.
             </summary>
         </member>
         <member name="M:DesktopVideoRecorder.Activities.StartRecording.#ctor">
@@ -185,6 +270,16 @@
               Output に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
+        <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.RecordDesktopVideoScope_DebugMode_Description">
+            <summary>
+              If set true, activity runs as debug mode. Default is false. に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.RecordDesktopVideoScope_DebugMode_DisplayName">
+            <summary>
+              DebugMode に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
         <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.RecordDesktopVideoScope_DelayAfter_Description">
             <summary>
               Delay time after starting ffmpeg に類似しているローカライズされた文字列を検索します。
@@ -217,7 +312,7 @@
         </member>
         <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.RecordDesktopVideoScope_ExtraOptionString_Description">
             <summary>
-               に類似しているローカライズされた文字列を検索します。
+              Extra option string e.g. Cropping:  &quot;-vf crop=w=640:h=480:x=50:y=50&quot;  に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.RecordDesktopVideoScope_ExtraOptionString_DisplayName">
@@ -303,6 +398,16 @@
         <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.RecordDesktopVideoScope_VideoSize_DisplayName">
             <summary>
               VideoSize に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.StartRecording_DebugMode_Description">
+            <summary>
+              If set true, activity runs as debug mode. Default is false. に類似しているローカライズされた文字列を検索します。
+            </summary>
+        </member>
+        <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.StartRecording_DebugMode_DisplayName">
+            <summary>
+              DebugMode に類似しているローカライズされた文字列を検索します。
             </summary>
         </member>
         <member name="P:DesktopVideoRecorder.Activities.Properties.Resources.StartRecording_DelayAfter_Description">

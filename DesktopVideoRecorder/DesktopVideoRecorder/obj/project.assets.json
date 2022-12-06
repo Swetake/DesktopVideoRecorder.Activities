@@ -15,15 +15,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+      "projectUniqueName": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
       "projectName": "DesktopVideoRecorder",
-      "projectPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+      "projectPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
       "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\obj\\",
+      "outputPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\.nuget\\NuGet.Config",
         "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -36,9 +35,7 @@
         "C:\\Users\\developer\\.nuget\\packages": {},
         "c:\\temp": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://gallery.uipath.com/api/v3/index.json": {},
-        "https://nuget.org/api/v2/": {},
-        "https://www.myget.org/F/uipath/": {}
+        "https://gallery.uipath.com/api/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {

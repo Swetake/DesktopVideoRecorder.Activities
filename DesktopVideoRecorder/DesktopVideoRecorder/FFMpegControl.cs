@@ -15,7 +15,7 @@ namespace DesktopVideoRecorder
     {
         const string FFMPEG_EXE_NAME = "ffmpeg.exe";
         const string MSG_FFMPEG_NOT_FOUND_EXCEPTION = "Not found " + FFMPEG_EXE_NAME;
-        const string MSG_FFMPEG_FAILED_TO_START = "Failed to start " + FFMPEG_EXE_NAME + ". Please check arguments.";
+        const string MSG_FFMPEG_FAILED_TO_START = "Failed to start " + FFMPEG_EXE_NAME + ". Please check arguments. Or set True at DebugMode property to investigate cause of the error";
 
         const string BASE_ARGUMENT = @" -f gdigrab -draw_mouse 1 -i desktop  -y ";
 
@@ -28,7 +28,7 @@ namespace DesktopVideoRecorder
         /// <summary>
         /// Start ffmpeg process to record desktop
         /// </summary>
-        public static Process Start(FFmpegArgument ffmpegArguments, int intDelayAfter)
+        public static Process Start(FFmpegArgument ffmpegArguments, int intDelayAfter, bool isDebugMode)
         {
             Process ps = null;
 
@@ -73,9 +73,20 @@ namespace DesktopVideoRecorder
                 psi.Arguments = strArgument;
 
                 psi.CreateNoWindow = false;
-                psi.UseShellExecute = true;
-                psi.WindowStyle = ProcessWindowStyle.Minimized;
+                if (isDebugMode)
+                {
+                    psi.UseShellExecute = false;
+                    psi.RedirectStandardError = true;
+                    psi.RedirectStandardOutput = true;
+                }
+                else
+                {
+                    psi.UseShellExecute = true;
+                    psi.RedirectStandardError = false;
+                    psi.RedirectStandardOutput = false;
 
+                }
+                psi.WindowStyle = ProcessWindowStyle.Minimized;
                 ps = Process.Start(psi);
 
                 System.Threading.Thread.Sleep(intDelayAfter);
@@ -83,7 +94,14 @@ namespace DesktopVideoRecorder
                 //Check if ffmpeg is normaly running.
                 if (ps.HasExited)
                 {
-                    throw (new Exception(MSG_FFMPEG_FAILED_TO_START));
+                    if (isDebugMode)
+                    {
+                        throw (new Exception(ps.StandardError.ReadToEnd()));
+                    }
+                    else
+                    {
+                        throw (new Exception(MSG_FFMPEG_FAILED_TO_START));
+                    }
                 }
             }
             else
@@ -114,7 +132,12 @@ namespace DesktopVideoRecorder
                     }
                     if (!ps.HasExited && counter >= MAX_RETRY_QUIT_COMMAND)
                     {
-                        ps.Kill();
+                        ps.CloseMainWindow();
+                        System.Threading.Thread.Sleep(RETRY_SEND_QUIT_COMMAND_WAIT_TIME);
+                        if (!ps.HasExited)
+                        {
+                            ps.Kill();
+                        }
                     }
                 }
             }

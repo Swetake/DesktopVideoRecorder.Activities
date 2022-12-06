@@ -164,7 +164,7 @@
             FFmpeg control class
             </summary>
         </member>
-        <member name="M:DesktopVideoRecorder.FFMpegControl.Start(DesktopVideoRecorder.FFmpegArgument,System.Int32)">
+        <member name="M:DesktopVideoRecorder.FFMpegControl.Start(DesktopVideoRecorder.FFmpegArgument,System.Int32,System.Boolean)">
             <summary>
             Start ffmpeg process to record desktop
             </summary>

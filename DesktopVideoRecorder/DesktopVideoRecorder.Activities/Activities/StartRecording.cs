@@ -22,7 +22,7 @@ namespace DesktopVideoRecorder.Activities
         const int DEFAULT_MAX_DURATION = 600;  // 10min
         const long DEFAULT_MAX_FILE_SIZE_MB = 2048;  //2048MB
         const int DEFAULT_FPS = 30;  //30fps
-        const int MAX_FPS = 60;
+        const int MAX_FPS = 240;
 
         const int DEFAULT_DELAY_AFTER = 500;
 
@@ -135,6 +135,14 @@ namespace DesktopVideoRecorder.Activities
         [LocalizedCategory(nameof(Resources.Common_Category))]
         public InArgument<bool> DisableActivity { get; set; }
 
+        /// <summary>
+        /// If set true, this activity run as debug mode.
+        /// </summary>
+        [LocalizedDisplayName(nameof(Resources.StartRecording_DebugMode_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartRecording_DebugMode_Description))]
+        [LocalizedCategory(nameof(Resources.Common_Category))]
+        public InArgument<bool> DebugMode { get; set; }
+
         #endregion
 
 
@@ -210,7 +218,7 @@ namespace DesktopVideoRecorder.Activities
                 }
 
                 //Framerate: -framerate option
-                if (arguments.FrameRate > 120 || arguments.FrameRate < 1)
+                if (arguments.FrameRate > MAX_FPS || arguments.FrameRate < 1)
                 {
                     arguments.FrameRate = DEFAULT_FPS;
                 }
@@ -225,11 +233,19 @@ namespace DesktopVideoRecorder.Activities
                 {
                     delayAfter = DelayAfter.Get(context);
                 }
+                bool isDebugMode;
+                if (DebugMode.Get(context))
+                {
+                    isDebugMode = true;
+                }else
+                {
+                    isDebugMode = false;
+                }
                 #endregion
 
 
 
-                ps =  FFMpegControl.Start(arguments, delayAfter);
+                ps =  FFMpegControl.Start(arguments, delayAfter,isDebugMode);
 
             }
             ///////////////////////////

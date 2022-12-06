@@ -142,6 +142,24 @@ namespace DesktopVideoRecorder.Activities.Properties {
         }
         
         /// <summary>
+        ///   If set true, activity runs as debug mode. Default is false. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string RecordDesktopVideoScope_DebugMode_Description {
+            get {
+                return ResourceManager.GetString("RecordDesktopVideoScope_DebugMode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   DebugMode に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string RecordDesktopVideoScope_DebugMode_DisplayName {
+            get {
+                return ResourceManager.GetString("RecordDesktopVideoScope_DebugMode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Delay time after starting ffmpeg に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string RecordDesktopVideoScope_DelayAfter_Description {
@@ -196,7 +214,7 @@ namespace DesktopVideoRecorder.Activities.Properties {
         }
         
         /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
+        ///   Extra option string e.g. Cropping:  &quot;-vf crop=w=640:h=480:x=50:y=50&quot;  に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string RecordDesktopVideoScope_ExtraOptionString_Description {
             get {
@@ -354,6 +372,24 @@ namespace DesktopVideoRecorder.Activities.Properties {
         public static string RecordDesktopVideoScope_VideoSize_DisplayName {
             get {
                 return ResourceManager.GetString("RecordDesktopVideoScope_VideoSize_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   If set true, activity runs as debug mode. Default is false. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartRecording_DebugMode_Description {
+            get {
+                return ResourceManager.GetString("StartRecording_DebugMode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   DebugMode に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartRecording_DebugMode_DisplayName {
+            get {
+                return ResourceManager.GetString("StartRecording_DebugMode_DisplayName", resourceCulture);
             }
         }
         

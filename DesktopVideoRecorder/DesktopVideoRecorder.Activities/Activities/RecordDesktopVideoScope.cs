@@ -10,6 +10,9 @@ using UiPath.Shared.Activities.Localization;
 
 namespace DesktopVideoRecorder.Activities
 {
+    /// <summary>
+    /// RecordDesktopVideoScope 
+    /// </summary>
     [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_DisplayName))]
     [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_Description))]
     public class RecordDesktopVideoScope : ContinuableAsyncNativeActivity
@@ -20,13 +23,16 @@ namespace DesktopVideoRecorder.Activities
         const int DEFAULT_MAX_DURATION = 600;  // 10min
         const long DEFAULT_MAX_FILE_SIZE_MB = 2048;  //2048MB
         const int DEFAULT_FPS = 30;  //30fps
-        const int MAX_FPS = 60;
+        const int MAX_FPS = 240;
 
         const int DEFAULT_DELAY_AFTER = 500;
 
 
         #region Properties
 
+        /// <summary>
+        /// Body.
+        /// </summary>
         [Browsable(false)]
         public ActivityAction<IObjectContainer​> Body { get; set; }
 
@@ -38,60 +44,104 @@ namespace DesktopVideoRecorder.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
+        /// <summary>
+        /// Delay after strating ffmepg process
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_DelayAfter_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_DelayAfter_Description))]
         [LocalizedCategory(nameof(Resources.Common_Category))]
         public InArgument<int> DelayAfter { get; set; }
 
+        /// <summary>
+        /// If set, this activity is disabled.
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_DisableActivity_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_DisableActivity_Description))]
         [LocalizedCategory(nameof(Resources.Common_Category))]
         public InArgument<bool> DisableActivity { get; set; }
 
+        /// <summary>
+        /// for additionl option 
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_ExtraOptionString_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_ExtraOptionString_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<string> ExtraOptionString { get; set; }
 
+        /// <summary>
+        /// Full path to ffmpeg.exe.
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_FFmpegFilePath_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_FFmpegFilePath_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<string> FFmpegFilePath { get; set; }
 
+        /// <summary>
+        /// Framerte (fps) 
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_FrameRate_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_FrameRate_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<int> FrameRate { get; set; }
 
+        /// <summary>
+        /// Max duration (sec) 
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_MaxDuration_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_MaxDuration_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<int> MaxDuration { get; set; }
 
+        /// <summary>
+        /// Max file size (MByte)
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_MaxFileSize_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_MaxFileSize_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<long> MaxFileSize { get; set; }
 
+        /// <summary>
+        /// Pixel format
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_PixelFormat_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_PixelFormat_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<string> PixelFormat { get; set; }
 
+        /// <summary>
+        /// video codec
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_VideoCodec_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_VideoCodec_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<string> VideoCodec { get; set; }
 
+        /// <summary>
+        /// video size 
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_VideoSize_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_VideoSize_Description))]
         [LocalizedCategory(nameof(Resources.FFmpeg_Category))]
         public InArgument<string> VideoSize { get; set; }
 
+
+        /// <summary>
+        /// output filename 
+        /// </summary>
         [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_OutputFileName_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_OutputFileName_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
         public InArgument<string> OutputFileName { get; set; }
+
+
+        /// <summary>
+        /// If set true, this activity run as debug mode.
+        /// </summary>
+        [LocalizedDisplayName(nameof(Resources.RecordDesktopVideoScope_DebugMode_DisplayName))]
+        [LocalizedDescription(nameof(Resources.RecordDesktopVideoScope_DebugMode_Description))]
+        [LocalizedCategory(nameof(Resources.Common_Category))]
+        public InArgument<bool> DebugMode { get; set; }
+
 
         // A tag used to identify the scope in the activity context
         internal static string ParentContainerPropertyTag => "ScopeActivity";
@@ -127,6 +177,9 @@ namespace DesktopVideoRecorder.Activities
 
         #region Protected Methods
 
+        /// <summary>
+        /// cache metadata 
+        /// </summary>
         protected override void CacheMetadata(NativeActivityMetadata metadata)
         {
             if (FFmpegFilePath == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FFmpegFilePath)));
@@ -135,6 +188,9 @@ namespace DesktopVideoRecorder.Activities
             base.CacheMetadata(metadata);
         }
 
+        /// <summary>
+        /// Execute Async 
+        /// </summary>
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext  context, CancellationToken cancellationToken)
         {
             // Inputs
@@ -181,7 +237,7 @@ namespace DesktopVideoRecorder.Activities
                 }
 
                 //Framerate: -framerate option
-                if (arguments.FrameRate > 120 || arguments.FrameRate < 1)
+                if (arguments.FrameRate > MAX_FPS || arguments.FrameRate < 1)
                 {
                     arguments.FrameRate = DEFAULT_FPS;
                 }
@@ -197,9 +253,20 @@ namespace DesktopVideoRecorder.Activities
                 {
                     delayAfter = DelayAfter.Get(context);
                 }
+
+                // Debug Mode
+                bool isDebugMode;
+                if (DebugMode.Get(context))
+                {
+                    isDebugMode = true;
+                }
+                else
+                {
+                    isDebugMode = false;
+                }
                 #endregion
 
-                ps = FFMpegControl.Start(arguments, delayAfter);
+                ps = FFMpegControl.Start(arguments, delayAfter,isDebugMode);
             }
 
                 return (ctx) => {

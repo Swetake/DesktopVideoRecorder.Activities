@@ -10,7 +10,7 @@
     <iconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</iconUrl>
     <description>Desktop Video Recoreder activites package. This package provides activities for desktop recording using ffmpeg.exe</description>
     <copyright>© 1998-2022 OPTAGE Inc.</copyright>
-    <tags>UiPath Desktop Video Recording</tags>
+    <tags>UiPath Desktop Video Recording ffmpeg</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.6.1" />
       <group targetFramework="net6.0-windows7.0" />
@@ -21,20 +21,25 @@
       </group>
       <group targetFramework=".NETFramework4.6.1" />
     </frameworkReferences>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Activities.Core.Presentation" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Activities" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Activities.Presentation" targetFramework=".NETFramework4.6.1" />
+    </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.Activities.dll" target="lib\net461\DesktopVideoRecorder.Activities.dll" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.dll" target="lib\net461\DesktopVideoRecorder.dll" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.Activities.xml" target="lib\net461\DesktopVideoRecorder.Activities.xml" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.xml" target="lib\net461\DesktopVideoRecorder.xml" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net461\DesktopVideoRecorder.Activities.Design.dll" target="lib\net461\DesktopVideoRecorder.Activities.Design.dll" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net461\DesktopVideoRecorder.Activities.Design.xml" target="lib\net461\DesktopVideoRecorder.Activities.Design.xml" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.Activities.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.dll" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.dll" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.Activities.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.xml" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.xml" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net6.0-windows\DesktopVideoRecorder.Activities.Design.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.Design.dll" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net6.0-windows\DesktopVideoRecorder.Activities.Design.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.Design.xml" />
-    <file src="C:\Users\developer\source\repos\DesktopVideoRecorder\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\packageIcon.png" target="packageIcon.png" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.Activities.dll" target="lib\net461\DesktopVideoRecorder.Activities.dll" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.dll" target="lib\net461\DesktopVideoRecorder.dll" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.Activities.xml" target="lib\net461\DesktopVideoRecorder.Activities.xml" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net461\DesktopVideoRecorder.xml" target="lib\net461\DesktopVideoRecorder.xml" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net461\DesktopVideoRecorder.Activities.Design.dll" target="lib\net461\DesktopVideoRecorder.Activities.Design.dll" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net461\DesktopVideoRecorder.Activities.Design.xml" target="lib\net461\DesktopVideoRecorder.Activities.Design.xml" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.Activities.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.dll" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.dll" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.Activities.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.xml" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities\bin\Release\net6.0\DesktopVideoRecorder.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.xml" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net6.0-windows\DesktopVideoRecorder.Activities.Design.dll" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.Design.dll" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\bin\Release\net6.0-windows\DesktopVideoRecorder.Activities.Design.xml" target="lib\net6.0-windows7.0\DesktopVideoRecorder.Activities.Design.xml" />
+    <file src="C:\Users\developer\Source\Repos\Swetake\DesktopVideoRecorder.Activities\DesktopVideoRecorder\DesktopVideoRecorder.Activities.Design\packageIcon.png" target="packageIcon.png" />
   </files>
 </package>

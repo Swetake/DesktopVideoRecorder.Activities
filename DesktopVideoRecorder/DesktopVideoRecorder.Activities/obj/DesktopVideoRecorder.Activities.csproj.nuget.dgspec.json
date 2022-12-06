@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj": {}
+    "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj": {
+    "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj",
+        "projectUniqueName": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj",
         "projectName": "DesktopVideoRecorder.Activities.Implementation",
-        "projectPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj",
+        "projectPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder.Activities.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\obj\\",
+        "outputPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder.Activities\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\.nuget\\NuGet.Config",
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,16 +27,14 @@
           "C:\\Users\\developer\\.nuget\\packages": {},
           "c:\\temp": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://gallery.uipath.com/api/v3/index.json": {},
-          "https://nuget.org/api/v2/": {},
-          "https://www.myget.org/F/uipath/": {}
+          "https://gallery.uipath.com/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
-                "projectPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+              "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
+                "projectPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
                 "privateAssets": "all"
               }
             }
@@ -45,8 +42,8 @@
           "net461": {
             "targetAlias": "net461",
             "projectReferences": {
-              "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
-                "projectPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+              "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
+                "projectPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
                 "privateAssets": "all"
               }
             }
@@ -97,18 +94,17 @@
         }
       }
     },
-    "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
+    "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+        "projectUniqueName": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
         "projectName": "DesktopVideoRecorder",
-        "projectPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
+        "projectPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\DesktopVideoRecorder\\DesktopVideoRecorder\\obj\\",
+        "outputPath": "C:\\Users\\developer\\Source\\Repos\\Swetake\\DesktopVideoRecorder.Activities\\DesktopVideoRecorder\\DesktopVideoRecorder\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "C:\\Users\\developer\\source\\repos\\DesktopVideoRecorder\\.nuget\\NuGet.Config",
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -121,9 +117,7 @@
           "C:\\Users\\developer\\.nuget\\packages": {},
           "c:\\temp": {},
           "https://api.nuget.org/v3/index.json": {},
-          "https://gallery.uipath.com/api/v3/index.json": {},
-          "https://nuget.org/api/v2/": {},
-          "https://www.myget.org/F/uipath/": {}
+          "https://gallery.uipath.com/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {

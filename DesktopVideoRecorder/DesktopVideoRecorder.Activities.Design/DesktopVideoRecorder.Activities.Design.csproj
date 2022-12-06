@@ -15,12 +15,12 @@
     <Authors>Yoichi Suetake</Authors>
     <Company>OPATGE Inc.</Company>
     <Copyright>© 1998-2022 OPTAGE Inc.</Copyright>
-    <PackageTags>UiPath Desktop Video Recording</PackageTags>
+    <PackageTags>UiPath Desktop Video Recording ffmpeg</PackageTags>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
     <!--<PackageIcon>packageIcon.png</PackageIcon>--> <!--PackageIcon not yet supported in UiPath Studio-->
-    <AssemblyVersion>2.0.1.0</AssemblyVersion>
-    <FileVersion>2.0.1.0</FileVersion>
+    <AssemblyVersion>2.0.2.0</AssemblyVersion>
+    <FileVersion>2.0.2.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
@@ -29,7 +29,7 @@
     <PackageVersion>2.0.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>2.0.1</PackageVersion>
+    <PackageVersion>2.0.2</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\RecordDesktopVideoScopeDesigner.xaml" />

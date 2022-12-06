@@ -328,7 +328,7 @@
     <comment>property name</comment>
   </data>
   <data name="RecordDesktopVideoScope_ExtraOptionString_Description" xml:space="preserve">
-    <value />
+    <value>Extra option string e.g. Cropping:  "-vf crop=w=640:h=480:x=50:y=50" </value>
     <comment>property description</comment>
   </data>
   <data name="RecordDesktopVideoScope_FFmpegFilePath_DisplayName" xml:space="preserve">
@@ -394,5 +394,17 @@
   <data name="RecordDesktopVideoScope_OutputFileName_Description" xml:space="preserve">
     <value>Full path to output file.(fie name should be end with .avi, .mp4 etc.</value>
     <comment>property description</comment>
+  </data>
+  <data name="RecordDesktopVideoScope_DebugMode_Description" xml:space="preserve">
+    <value>If set true, activity runs as debug mode. Default is false.</value>
+  </data>
+  <data name="RecordDesktopVideoScope_DebugMode_DisplayName" xml:space="preserve">
+    <value>DebugMode</value>
+  </data>
+  <data name="StartRecording_DebugMode_Description" xml:space="preserve">
+    <value>If set true, activity runs as debug mode. Default is false.</value>
+  </data>
+  <data name="StartRecording_DebugMode_DisplayName" xml:space="preserve">
+    <value>DebugMode</value>
   </data>
 </root>
